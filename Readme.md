@@ -27,3 +27,7 @@
 - Pagination on tweets
 
 - User Auth
+
+## Screenshots
+
+![](/screenshots/Screenshot%202023-03-28%20083901.png)
