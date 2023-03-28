@@ -16,7 +16,6 @@ class TweetService {
 
     // create a tweet
     const tweet = await this.tweetRepository.create(data);
-    console.log("tweet", tweet);
 
     // create a hashtags and add it here
     let tagsAlreadyPresent = await this.hashtagRepository.findByName(tags);
