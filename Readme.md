@@ -38,6 +38,12 @@ Inside the Tweet Schema if a User writes a `Tweet` including the `HashTags` we h
 
 ## `Updated Model with Like Schema`
 
-Here we are defining a like model by which the user has the authority that it can either like it on a Tweet or on a Comment.
+Here we are defining a `like` model by which the user has the authority that it can either like it on a Tweet or on a Comment.
 
 ![](/screenshots/Screenshot%202023-04-03%20121110.png)
+
+## `Updated Model with Comment Schema`
+
+Here we are defining a `Comment` model by which the user has the authority that it can either Comment it on a Tweet or on a Comment.
+
+![](/screenshots/Screenshot%202023-04-03%20140525.png)
