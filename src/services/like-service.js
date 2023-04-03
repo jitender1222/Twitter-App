@@ -11,7 +11,6 @@ class LikeService {
     //api/v1/likes/toggle?id=modelid&type==tweet
     if (modelType === "Tweet") {
       var likeable = await this.tweetRepository.find(modelId);
-      console.log("likebake", likeable);
     } else if (modelType === "Comment") {
       // var commentable = this.TweetRepository.get(modelId).populate();
     } else {
