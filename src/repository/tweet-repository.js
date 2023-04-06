@@ -8,10 +8,9 @@ class TweetRepository extends CrudRepository {
   async create(data) {
     try {
       const tweet = await Tweet.create(data);
-      tweet.save();
       return tweet;
     } catch (error) {
-      console.log(error);
+      throw error;
     }
   }
   async getCommentId(id) {
@@ -26,7 +25,7 @@ class TweetRepository extends CrudRepository {
   }
   async getAll(offset, limit) {
     try {
-      const tweet = await Tweet.find().limit(limit);
+      const tweet = await Tweet.find().skip(offset).limit(limit);
       return tweet;
     } catch (error) {
       console.log(error);
